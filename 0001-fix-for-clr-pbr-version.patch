@@ -1,0 +1,35 @@
+From 54d5d2a8a7076f897270573f1950f0e4d376af98 Mon Sep 17 00:00:00 2001
+From: "Simental Magana, Marcos" <marcos.simental.magana@intel.com>
+Date: Mon, 13 Jul 2015 10:00:21 -0500
+Subject: [PATCH] fix for clr pbr version
+
+---
+ requirements.txt | 2 +-
+ setup.py         | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/requirements.txt b/requirements.txt
+index 2ec028d..206a5f9 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -2,5 +2,5 @@ funcsigs;python_version<"3.3"
+ # For runtime needs this is correct. For setup_requires needs, 1.2.0 is needed
+ # but setuptools can't cope with conflicts in setup_requires, so thats
+ # unversioned.
+-pbr>=0.11
++pbr
+ six>=1.7
+diff --git a/setup.py b/setup.py
+index 1a18577..c72c231 100755
+--- a/setup.py
++++ b/setup.py
+@@ -3,5 +3,5 @@ import setuptools
+ 
+ 
+ setuptools.setup(
+-    setup_requires=['pbr>=1.3'],
++    setup_requires=['pbr'],
+     pbr=True)
+-- 
+2.1.0
+

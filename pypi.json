@@ -1,0 +1,6 @@
+{
+	"name": "mock",
+	"requires": [],
+	"license": "BSD-2-Clause",
+	"summary": "Rolling backport of unittest.mock for all Pythons"
+}
